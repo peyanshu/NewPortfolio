@@ -1,0 +1,18 @@
+.slidetext {
+          position: absolute;
+          font-size: 45vh;
+          bottom: -50px;
+          white-space: nowrap;
+          font-family: 'Oswald Light';
+          color: #ffffff09;
+          text-transform: capitalize;
+          letter-spacing: -15px;
+          width: 50%;
+        
+          @include mobile {
+            font-size: 20vh;
+            letter-spacing: -5px;
+            bottom: -20px;
+          }
+        }
+        

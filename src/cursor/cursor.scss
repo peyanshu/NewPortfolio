@@ -1,0 +1,16 @@
+
+.cursor{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid#fff;
+   position: fixed;
+   z-index: 9999;
+   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+// @media screen {
+//    .cursor{
+//    display: none;
+
+//    }
+// }

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin mobile {
+          @media (max-width: 738px) {
+            @content;
+          }
+        }
+        .slidetext {
+          position: absolute;
+          font-size: 45vh;
+          bottom: -50px;
+          white-space: nowrap;
+          font-family: 'Oswald Light';
+          color: #ffffff09;
+          text-transform: capitalize;
+          letter-spacing: -15px;
+          width: 50%;
+          z-index: 999;
+        
+                }
+          @media screen {
+          .slidetext{
+          display: none;
+       
+          }
+       }
