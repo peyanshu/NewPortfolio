@@ -76,7 +76,7 @@ const About = () => {
             </h2>
             <div className="text-gray-300 space-y-4">
               <p>
-                With over 8 years of experience in web development and 3D design, I've dedicated my career to creating
+                With over 0.5 years of experience in web development and 3D design, I've dedicated my career to creating
                 engaging digital experiences that blend technical excellence with artistic vision.
               </p>
               <p>
