@@ -23,6 +23,7 @@ const About = () => {
       title: 'Full stack Developer',
       company: 'Patch Line',
       period: '2024 - 2025',
+
       description: 'Developed responsive websites and web applications using modern JavaScript frameworks.'
     }
   ];
@@ -38,12 +39,14 @@ const About = () => {
       degree: 'Schooling',
       institution: 'Sri sankara vidyalaya',
       year: '2020 - 2021',
-      description: 'PCM'
+      description: 'PCM',
+      class:'12th'
     },
     {
       degree: 'Schooling',
       institution: 'Sri sankara vidyalaya',
       year: '2018 - 2019',
+      class:'10th'
      
     }
   ];
