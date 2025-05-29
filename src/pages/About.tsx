@@ -13,37 +13,38 @@ const About = () => {
 
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
+      title: 'Flutter Developer',
       company: 'Tech Innovations Inc.',
-      period: '2021 - Present',
+      period: '2025 - Present',
       description: 'Leading the development of interactive 3D web experiences using Three.js and React.'
     },
+    
     {
-      title: '3D Artist & Developer',
-      company: 'Creative Studio',
-      period: '2018 - 2021',
-      description: 'Created 3D models and implemented them in web-based projects using WebGL technologies.'
-    },
-    {
-      title: 'Frontend Developer',
-      company: 'Web Solutions',
-      period: '2016 - 2018',
+      title: 'Full stack Developer',
+      company: 'Patch Line',
+      period: '2024 - 2025',
       description: 'Developed responsive websites and web applications using modern JavaScript frameworks.'
     }
   ];
 
   const education = [
     {
-      degree: 'Master of Computer Science',
-      institution: 'Tech University',
-      year: '2016',
-      description: 'Specialized in Computer Graphics and Interactive Media'
+      degree: 'Bachelor of Computer Science',
+      institution: 'oirntal institute of science and technology',
+      year: '2021 - 2025',
+      description: 'Computer science artifical intelligent and machine learning'
     },
     {
-      degree: 'Bachelor of Fine Arts',
-      institution: 'Art & Design Academy',
-      year: '2014',
-      description: '3D Modeling and Digital Art'
+      degree: 'Schooling',
+      institution: 'Sri sankara vidyalaya',
+      year: '2020 - 2021',
+      description: 'PCM'
+    },
+    {
+      degree: 'Schooling',
+      institution: 'Sri sankara vidyalaya',
+      year: '2018 - 2019',
+     
     }
   ];
 
