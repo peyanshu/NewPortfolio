@@ -118,7 +118,9 @@ const Home = () => {
                 <Linkedin className="w-6 h-6 text-white" />
               </a>
               <a 
-                href="peyanshu.verma.10@gmail.com" 
+              <script>
+                window.location.href = "mailto:peyanshu.verma.10@gmail.com";
+              </script>
                 className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
               >
                 <Mail className="w-6 h-6 text-white" />
