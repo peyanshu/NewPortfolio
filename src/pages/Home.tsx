@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+shuimport React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import Canvas3D from '../components/Canvas3D';
@@ -118,7 +118,7 @@ const Home = () => {
                 <Linkedin className="w-6 h-6 text-white" />
               </a>
               <a 
-                href="mailto:contact@example.com" 
+                href="peyanshu.verma.10@gmail.com" 
                 className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
               >
                 <Mail className="w-6 h-6 text-white" />
@@ -259,7 +259,7 @@ const Home = () => {
       {/* Footer */}
       <footer className="py-8 bg-black text-center text-gray-400">
         <div className="container mx-auto px-4">
-          <p>© {new Date().getFullYear()} John Doe. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Peyanshu verma. All rights reserved.</p>
         </div>
       </footer>
     </div>
