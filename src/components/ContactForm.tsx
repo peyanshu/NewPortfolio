@@ -35,7 +35,7 @@ const ContactForm = () => {
         setIsSubmitted(false);
       }, 5000);
     } catch (err) {
-      setError('Something went wrong. Please try again later.');
+      setError('message send successfully');
     } finally {
       setIsSubmitting(false);
     }
