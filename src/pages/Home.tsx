@@ -5,7 +5,58 @@ import Canvas3D from '../components/Canvas3D';
 import Typed from 'typed.js';
 
 const Home = () => {
-  const [scrollY, setScrollY] = useState(0);
+  co<section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Featured Projects</h2>
+            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              Check out some of my recent work combining 3D visualization with web development.
+            </p>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              >
+                <div className="h-48 bg-gray-700"></div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">Project {index}</h3>
+                  <p className="text-gray-400 mb-4">
+                    A brief description of this amazing project and the technologies used.
+                  </p>
+                  <a 
+                    href="/projects"
+                    className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+                  >
+                    View Details
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <a 
+              href="/projects"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+            >
+              View All Projects
+            </a>
+          </div>
+        </div>
+      </section>nst [scrollY, setScrollY] = useState(0);
   const typedRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
@@ -181,58 +232,75 @@ const Home = () => {
       
       {/* Projects Preview */}
       <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Featured Projects</h2>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Check out some of my recent work combining 3D visualization with web development.
-            </p>
-          </motion.div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-              >
-                <div className="h-48 bg-gray-700"></div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">Project {index}</h3>
-                  <p className="text-gray-400 mb-4">
-                    A brief description of this amazing project and the technologies used.
-                  </p>
-                  <a 
-                    href="/projects"
-                    className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
-                  >
-                    View Details
-                  </a>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <a 
-              href="/projects"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+      <div className="container mx-auto px-4">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Featured Projects
+          </h2>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Check out some of my recent work combining 3D visualization with web
+            development.
+          </p>
+        </motion.div>
+
+        {/* Project Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[1, 2, 3].map((index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              View All Projects
-            </a>
-          </div>
+              {/* Random Image */}
+              <div className="h-48 bg-gray-700">
+                <img
+                  src={`https://source.unsplash.com/random/400x300?technology,web,code&sig=${index}`}
+                  alt={`Project ${index}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Card Content */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Project {index}
+                </h3>
+                <p className="text-gray-400 mb-4">
+                  A brief description of this amazing project and the
+                  technologies used.
+                </p>
+                <a
+                  href="/projects"
+                  className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+                >
+                  View Details
+                </a>
+              </div>
+            </motion.div>
+          ))}
         </div>
-      </section>
-      
+
+        {/* View All Button */}
+        <div className="text-center mt-12">
+          <a
+            href="/projects"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+          >
+            View All Projects
+          </a>
+        </div>
+      </div>
+    </section>
       {/* Contact CTA */}
       <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
         <div className="container mx-auto px-4">
